@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    document.getElementById("errorMessage").innerHTML = "<span style='color:red'>Xanani doldur </span>";
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <p id="errorMessage"></p>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
