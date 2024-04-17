@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Average</title>
+</head>
+<body>
+    <h2>Student Information</h2>
+    <form>
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name"><br><br>
+
+        <label for="subject1">Subject 1 Score:</label>
+        <input type="number" id="subject1" name="subject1"><br><br>
+
+        <label for="subject2">Subject 2 Score:</label>
+        <input type="number" id="subject2" name="subject2"><br><br>
+
+        <label for="subject3">Subject 3 Score:</label>
+        <input type="number" id="subject3" name="subject3"><br><br>
+
+        <button type="button" onclick="calculateAverage()">Calculate Average</button><br><br>
+    </form>
+
+    <h2>Students with Average Score > 45</h2>
+    <table border="1" id="above45_table">
+        <tr>
+            <th>Student Name</th>
+            <th>Average Score</th>
+        </tr>
+    </table>
+
+    <h2>All Student Information</h2>
+    <table border="1" id="all_students_table">
+        <tr>
+            <th>Student Name</th>
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+            <th>Subject 3</th>
+            <th>Average Score</th>
+        </tr>
+    </table>
+
+</body>
+</html>
